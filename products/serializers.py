@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Produto
+from .models import Order
 
-class ProdutoSerializer(serializers.ModelSerializer):
+class OrderSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Produto
-        fields = ["id", "nome", "preco", "descricao"]
+        model = Order
+        fields = '__all__' # Isso diz ao Django para traduzir todos os campos do modelo
