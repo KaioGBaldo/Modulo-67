@@ -23,7 +23,7 @@ class Product(models.Model):
 
 class Order(models.Model):
     # Relaciona o pedido com um utilizador do sistema
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     # Um pedido pode ter vários produtos
     product = models.ManyToManyField(Product)
     created_at = models.DateTimeField(auto_now_add=True)

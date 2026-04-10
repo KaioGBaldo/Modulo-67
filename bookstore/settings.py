@@ -136,3 +136,21 @@ CACHES = {
         "LOCATION": "unique-snowflake",
     }
 }
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.preview.app.github.dev',
+    'https://*.github.dev',
+    'https://*.app.github.dev',
+    'https://localhost:8000',
+    'http://127.0.0.1:8000',
+    'https://vigilant-adventure-7x54p75grjrfr94j-8000.app.github.dev/',
+]
+
+CSRF_ALLOW_WIDGET_VIEW = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+CSRF_TRUSTED_ORIGINS = ['https://*.github.dev', 'https://*.app.github.dev']
