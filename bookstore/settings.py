@@ -38,9 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'debug_toolbar',
-    'products',
     "rest_framework",
-    "products",  # 🔴 ESSENCIAL
+    "products",  # Mantenha apenas esta linha
 ]
 
 MIDDLEWARE = [
