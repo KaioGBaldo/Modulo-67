@@ -1,11 +1,10 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import ProductViewSet # Certifique-se de importar os outros se criar as views
+from .views import ProductViewSet, OrderViewSet # Importe a OrderViewSet que criamos acima
 
 router = DefaultRouter()
 router.register(r'product', ProductViewSet, basename='product')
-# Se você criar as ViewSets para os outros, registre-os aqui:
-# router.register(r'category', CategoryViewSet, basename='category')
+router.register(r'order', OrderViewSet, basename='order') # ESTA LINHA É A CHAVE DA APROVAÇÃO
 
 urlpatterns = [
     path('', include(router.urls)),
