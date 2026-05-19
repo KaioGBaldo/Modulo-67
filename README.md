@@ -38,4 +38,5 @@ Olá, meu nome é **Kaio**, tenho 22 anos. Como meu foco principal é o **Back-E
 [![GitHub](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=092E20)](https://github.com/SeuUsuarioAqui)
 
 ---
-*Projeto desenvolvido para consolidar o desenvolvimento de APIs escaláveis com paginação e DRF.*
+*Projeto desenvolvido para consolidar o desenvolvimento de APIs escaláveis com paginação e DRF..*
+
